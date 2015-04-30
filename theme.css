@@ -1,0 +1,24 @@
+.container {
+	
+	text-align: center;
+	padding: 4px 0px;
+	
+}
+
+.pager{
+	background-image: url("file:///home/justus/My_Site/assets/background.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	height: 600px;
+	color: white;
+	background-position: relative;
+}
+
+.row{
+	padding: 10px 0px;
+}
+
+.tgh img{
+
+	
+}
