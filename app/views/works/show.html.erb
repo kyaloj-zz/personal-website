@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @work.title %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @work.company %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @work.period %>
+</p>
+
+<p>
+  <strong>Job description:</strong>
+  <%= @work.job_description %>
+</p>
+
+<p>
+  <strong>Major achievements:</strong>
+  <%= @work.major_achievements %>
+</p>
+
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>
