@@ -18,9 +18,11 @@
 
  @import "bootstrap";
 
+
  .container{
- 	width: 1366px;
+ 	width: 100%;
  	padding: 0;
+ 	height: 670px; 	
  	
  }
 
@@ -29,10 +31,13 @@
  }
 
 .navigation_bar{
-	color: white;
-	padding-left: 16px;
+	
+	
 	width:100%;
-	background-color: #040404;
+	height: 10%;
+	position: fixed;
+
+	
 
 	
 }
@@ -51,9 +56,16 @@
 .menu {
     vertical-align: middle;
     padding-top: 10px;
+    text-align: center;
 
 
 
+
+}
+.head{
+	background-color: black;
+	color: white;
+	padding-left: 55px;
 }
 
 .menu li {
@@ -69,16 +81,16 @@
 footer {
 
     position: fixed;
-    height: 100px;
+    height: 10%;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #040404;
     padding-top: 25px;
-    height: 70px;
+    
 
-
-
+   
+   
+   
 }
 
 footer img{
