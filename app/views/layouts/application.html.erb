@@ -3,87 +3,135 @@
 
 
 <head>
-  <title>Justus</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+          <title>Justus</title>
+          <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+          <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+          <%= csrf_meta_tags %>
+          <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<div class="container">
+<div id="topnotch">
 
 <!--the nav bar-->
+      <div class="container">
 
-  <div class="row navigation_bar header">
-      <div class="col-md-2 head">
-    	<h2> Justus</h2>
-      </div>
-    
-      <div class="col-md-10 menu">
-    	<ul>
-    		<li><%= link_to 'Home', homes_path %></li>
-    		<li><%= link_to 'About', abouts_path %></li>
-    		<li><%= link_to 'Portfolio', portfolios_path %></li>
-    		<li><%= link_to 'Life', lives_path %></li>
-    		<li><%= link_to 'Blog', blogs_path %></li>
-    		<li><%= link_to 'Contacts', contacts_path %></li>
-    	</ul>
-     </div>
-  	
+                <div class="row navigation_bar">
+                    <div class="col-md-2" id ="starter">
+                  	<h2 id="jina"> Justus</h2>
+                    </div>
+                  
+                    <div class="col-md-10">
+                  	<ul>
+                  		<li><%= link_to 'Home', homes_path, class: "malinks" %></li>
+                  		<li><%= link_to 'About', abouts_path, class: "malinks" %></li>
+                  		<li><%= link_to 'Portfolio', portfolios_path, class: "malinks" %></li>
+                  		<li><%= link_to 'Life', lives_path, class: "malinks" %></li>
+                  		<li><%= link_to 'Blog', blogs_path, class: "malinks" %></li>
+                  		<li><%= link_to 'Contacts', contacts_path, class: "malinks" %></li>
+                  	</ul>
+                   </div>
+                </div>	
+        </div>
+
   </div>
-  
 <!--end of navigation bar-->
 
 <!--get content from other pages now-->
 
-<div class="main">
+<div>
       <%= yield %>
-    </div>
+</div>
 
 <!--footer begins from here-->
 
+<div id="topnotch">
+<div class="container">
+
+     <div class="row contact_us_k">
+  
+
+             
+        <div class="col-md-12 contacts">
+             
+                   <h3>
+                 Contact me
+                    </h3>
+        </div>
+
+     </div>
+
+
+
+    <div class="row the_two_boxes"> 
+       <div class="col-md-12">
+        
+        <div class="row box1">
+              <input type="Name" placeholder="Name..." >
+        </section>
+
+        <section class="box1">
+
+              <input type="Email" placeholder="Email...">
+        </section>
+      </div>
+     </div>   
+
+
+
+    <div class="row biger_box">  
+          <div class="col-md-12">        
+                   
+              <section class="messager">
+                   <input type="message" placeholder="Your Message here">
+              </section>
+          </div>     
+    </div>
+ </div>   
+<div class="container"> 
 <footer>
-	<div class="row">
-     <div class="col-md-12"> 
 
-          <a href="www.twitter.com">
-    	        <img src="/twitter.png">
-    	   </a>
+      	<div class="row">
 
-    	
+           <div class="col-md-12"> 
 
-    	<a href="https://www.facebook.com/?_rdr">
-    	   <img src="/facebook.png">
-    	</a>
+               <a href="www.twitter.com">
+          	        <img src="/twitter.png">
+          	   </a>
 
-    	<a href="https://plus.google.com/">
-    	   <img src="/g_plus.png">
-    	</a>
+          	
 
-        <a href="http://www.skype.com/en/">
-           <img src="/skype.png">
-        </a>
+            	<a href="https://www.facebook.com/?_rdr">
+            	   <img src="/facebook.png">
+            	</a>
 
-    
-    	
-    </div>
-    </div>
+            	<a href="https://plus.google.com/">
+            	   <img src="/g_plus.png">
+            	</a>
 
+              <a href="http://www.skype.com/en/">
+                 <img src="/skype.png">
+              </a>
 
-
-<div class="row">
-    <div class="col-md-12">    
-    	<p> 
-    	   &copy Justus-2015
-    	</p>
-    
-
-    	
-    </div>  
- </div>
-</footer>
+          
+          	
+          </div>
+         </div>
 
 
-</div>
+
+        <div class="row">
+            <div class="col-md-12">    
+            	<p> 
+            	   &copy Justus-2015
+            	</p>
+            
+
+            	
+            </div>  
+         </div>
+   </footer>
+  </div> 
+
 </body>
 </html>
