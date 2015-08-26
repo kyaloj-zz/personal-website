@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("bgimage.jpg");
+  /*background-image: url("bgimage.jpg");*/
    background-size: cover;
    margin: 0px;
    padding: 0px;
@@ -8,6 +8,7 @@ body {
    padding-top: 4%;
   min-height: 680px;
   height: 100%;
+  color: black !important;
   
 }
 
