@@ -1,52 +1,33 @@
-
-
-<div class="life_page">
-<div class=" container">
-<div class="row">
-
-    <div class="col-md-12">
-        <h1>
-          "I love to party. But that kinda changed recently"
-        </h1>
-
-        
-    </div>
-
-    
-
-    
-</div>
-</div>
+<div class="container">
+         <div class="row">
+            <div class="col s12 m12 l12" id="one">
+                <canvas id="buyers"></canvas>
+            </div>
+        </div>
 </div>
 
+<script>
+    // line chart data
+    var buyerData = {
+          labels : ["HTML/CSS","jquery","Ruby on Rails", "Mysql","Android","UX","Communication","Team-work"],
+                  datasets : [
+                  {
 
-<!-- <p id="notice"><%= notice %></p>
+                      type: "bar",
+                      fillColor : "rgba(0, 255, 0,0.3)",
+                      // strokeColor: "rgba(220,220,220,0.8)",
+                      //highlightFill: "rgba(220,220,220,0.75)",
+                      //highlightStroke: "rgba(220,220,220,1)",
+                      data : [80, 60, 70, 65, 50,70, 80,  90]
+                  }
+              ]
+              }
+              // get line chart canvas
+              var buyers = document.getElementById('buyers').getContext('2d');
 
-<h1>Listing Lives</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image url</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+              // draw line chart
+           var myChart = new Chart(buyers).Bar(buyerData, {});
+              document.getElementById('legen').innerHTML = myChart.generateLegend();
 
-  <tbody>
-    <% @lives.each do |life| %>
-      <tr>
-        <td><%= life.image_url %></td>
-        <td><%= life.description %></td>
-        <td><%= link_to 'Show', life %></td>
-        <td><%= link_to 'Edit', edit_life_path(life) %></td>
-        <td><%= link_to 'Destroy', life, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Life', new_life_path %>
- -->
+</script>
