@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  resources :homes
+  resources :bios
   resources :contacts
   resources :blogs
-  resources :lives
+  resources :skills
   resources :portfolios
   resources :educations
   resources :works
-  resources :abouts
+  resources :homes
   
-  root to: 'homes#index'
+  root to: 'bios#index'
 end

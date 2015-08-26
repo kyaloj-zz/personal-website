@@ -3,12 +3,12 @@
 
 
 <head>
-          <title>Justus</title>
-          <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-          <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-          <%= csrf_meta_tags %>
-          <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Justus</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+      <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -57,17 +57,14 @@
                  <img src="g_plus.png">
               </a>
               <a href="http://www.skype.com/en/">
-                 <img src="skype.png">
-              </a>
+              <img src="skype.png">
+           </a>
        </div>
       </div>
     </div>
 
       <div class="col s12 m8 l8">
-        <div class="video-container no-controls">
-          <iframe width="853" height="600" frameborder="0" allowfullscreen name="iframe_a"></iframe>
-        </div>
-        <%= yield %>
+         <%= yield %>
     </div>
   </div>
 
