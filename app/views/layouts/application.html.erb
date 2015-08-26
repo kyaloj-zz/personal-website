@@ -12,7 +12,6 @@
 </head>
 
 <body>
-<div id="main_box">
 <!--the box of information-->
  <div class="container mybox">
    <nav>
@@ -22,17 +21,17 @@
       <ul class="right hide-on-med-and-down">
          <li><%= link_to 'Bio', bios_path %></li>
          <li><%= link_to 'Skills', skills_path %></li>
-         <li><%= link_to 'Work', bios_path %></li>
-         <li><%= link_to 'Education', bios_path %></li>
+         <li><%= link_to 'Work', works_path %></li>
+         <li><%= link_to 'Education', educations_path %></li>
          <li><%= link_to 'Portfolio', bios_path %></li>
           <!-- <li><a href="fun.html" target="iframe_a">Life</a></li> -->
          <li><%= link_to 'Contacts', bios_path %></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><%= link_to 'Bio', bios_path %></li>
-         <li><%= link_to 'Skills', bios_path %></li>
-         <li><%= link_to 'Work', bios_path %></li>
-         <li><%= link_to 'Education', bios_path %></li>
+         <li><%= link_to 'Skills', skills_path %></li>
+         <li><%= link_to 'Work', works_path %></li>
+         <li><%= link_to 'Education', educations_path %></li>
          <li><%= link_to 'Portfolio', bios_path %></li>
           <!-- <li><a href="fun.html" target="iframe_a">Life</a></li> -->
          <li><%= link_to 'Contacts', bios_path %></li>
@@ -73,6 +72,5 @@
       <script type="text/javascript" src="materialize.min.js"></script>
        <script type="text/javascript" src="justus.js"></script>
        <script src="typed.js" type="text/javascript"></script>
-    </div>
-</body>
+   </body>
 </html>

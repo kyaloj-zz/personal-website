@@ -1,18 +1,14 @@
 
-#main_box{
+body {
   background-image: url("bgimage.jpg");
    background-size: cover;
    margin: 0px;
    padding: 0px;
-   color: white;
+   color: white !important;
    padding-top: 4%;
   min-height: 680px;
   height: 100%;
   
-}
-
-body{
-  color: white;
 }
 
 .summary-area{

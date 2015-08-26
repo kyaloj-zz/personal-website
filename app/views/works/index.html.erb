@@ -1,35 +1,67 @@
-<p id="notice"><%= notice %></p>
+<div class="info-box">
+         <!-- each row is job profile -->
+         <div class="row">
+            <div class="col s4 m4 l4">
+              <h5> Junior Data Scientist <h5>
+              <h6>MFarm KE</h6>
+              <h6> Feb, 2015 to Date </h6>
 
-<h1>Listing Works</h1>
+             </div>
+             <div class="col s8 m8 l8">
+               <h5> Duties</h5>
+                <p>
+                  responsible for the complete life cycle of a new/modified software
+                  products, from research and design to implementation, training and support
+                </p>
+                <p>
+                  Managing all data collection processes and analysis
+                  for managerial use as well as MFarm clients.
+                </p>
+            </div>
+        </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Company</th>
-      <th>Period</th>
-      <th>Job description</th>
-      <th>Major achievements</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+        <hr>
 
-  <tbody>
-    <% @works.each do |work| %>
-      <tr>
-        <td><%= work.title %></td>
-        <td><%= work.company %></td>
-        <td><%= work.period %></td>
-        <td><%= work.job_description %></td>
-        <td><%= work.major_achievements %></td>
-        <td><%= link_to 'Show', work %></td>
-        <td><%= link_to 'Edit', edit_work_path(work) %></td>
-        <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <div class="row">
+           <div class="col s4 m4 l4">
+             <h5> Data Analyst and project coordinator <h5>
+             <h6>MFarm KE</h6>
+             <h6> Aug, 2013 to Feb, 2015 </h6>
 
-<br>
+            </div>
+            <div class="col s8 m8 l8">
+              <h5> Duties</h5>
 
-<%= link_to 'New Work', new_work_path %>
+               <p>
+                 Managing all data collection processes and analysis
+                 for managerial use as well as MFarm clients.
+               </p>
+               <p>
+                  Working with local partners and entrepreneurs in the implementation
+                  of MFarm projects as required by donors
+               </p>
+           </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+          <div class="col s4 m4 l4">
+            <h5>Intern Data Analyst <h5>
+            <h6>MFarm KE</h6>
+            <h6> March, 2012 to Aug, 2012 </h6>
+
+           </div>
+           <div class="col s8 m8 l8">
+             <h5> Duties</h5>
+
+              <p>
+                Price data collection and verification.
+              </p>
+              <p>
+                 Descriptive statistics for general understanding of the Kenyan agricultural markets
+              </p>
+          </div>
+      </div>
+
+   </div>
