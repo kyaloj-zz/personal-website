@@ -8,151 +8,74 @@
           <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
           <%= csrf_meta_tags %>
           <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-<div id="topnotch">
-
-<!--the nav bar-->
-      <div class="container">
-
-                <div class="row navigation_bar">
-                    <div class="col-md-2" id ="starter">
-                  	<h2 id="jina"> Justus</h2>
-                    </div>
-                  
-                    <div class="col-md-10">
-                  	<ul>
-                  		<li><%= link_to 'Home', homes_path, class: "malinks" %></li>
-                  		<li><%= link_to 'About', abouts_path, class: "malinks" %></li>
-                  		<li><%= link_to 'Portfolio', portfolios_path, class: "malinks" %></li>
-                  		<li><%= link_to 'Life', lives_path, class: "malinks" %></li>
-                  		<li><%= link_to 'Blog', blogs_path, class: "malinks" %></li>
-                  		<li><%= link_to 'Contacts', contacts_path, class: "malinks" %></li>
-                  	</ul>
-                   </div>
-                </div>	
-        </div>
-
-  </div>
-<!--end of navigation bar-->
-
-<!--get content from other pages now-->
-
-<div>
-      <%= yield %>
-</div>
-
-<!--footer begins from here-->
-
-<div id="topnotch">
-<div class="container">
-
-     <div class="row">
-  
-
-             
-        <div class="col-md-12 contacts">
-             
-                   <h3>
-                 Contact me
-                    </h3>
-        </div>
-
-     </div>
-
-
-
-    <div class="row"> 
-       
-        
-        
-
-        <div class="col-md-2">
-          
-        </div>
-
-        <div class="col-md-4 box1">
-              <input type="Name" placeholder="Name..." >
-        </div>
-
-        <div class="col-md-4 box1">
-
-              <input type="Email" placeholder="Email...">
-        </div>
-        <div class="col-md-2">
-          
-        </div>
-      </div>
-       
-
-
-
-    <div class="row">  
-          <div class="col-md-2 messager">        
-                   
-              
-          </div>     
-
-          <div class="col-md-8 messager">        
-                   
-              <div>
-                   <input id="halla" type="message" placeholder="Your Message here">
-              </div>
-          </div>     
-
-          <div class="col-md-2 messager">        
-                   
-              
-          </div>     
-
-
+<div id="main_box">
+<!--the box of information-->
+ <div class="container mybox">
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Justus Kyalo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="bio.html" target="iframe_a">Bio</a></li>
+          <li><a href="skills.html" target="iframe_a">Skills</a></li>
+          <li><a href="work.html" target="iframe_a">Work</a></li>
+          <li><a href="education.html" target="iframe_a">Education</a></li>
+          <li><a href="folio.html" target="iframe_a">Portfolio</a></li>
+          <!-- <li><a href="fun.html" target="iframe_a">Life</a></li> -->
+          <li><a href="contacts.html" target="iframe_a">Contacts</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="bio.html" target="iframe_a">Bio</a></li>
+        <li><a href="skills.html" target="iframe_a">Skills</a></li>
+        <li><a href="work.html" target="iframe_a">Work</a></li>
+        <li><a href="education.html" target="iframe_a">Education</a></li>
+        <li><a href="folio.html" target="iframe_a">Portfolio</a></li>
+        <!-- <li><a href="fun.html" target="iframe_a">Life</a></li> -->
+        <li><a href="contacts.html" target="iframe_a">Contacts</a></li>
+      </ul>
     </div>
- </div>   
-<div class="container"> 
-<footer>
+  </nav>
 
-      	<div class="row">
-
-           <div class="col-md-12 socials"> 
-
-               <a href="https://www.twitter.com/">
-          	        <img src="/skype.png">
-          	   </a>
-
-          	
-
-            	<a href="https://www.facebook.com/?_rdr">
-            	   <img src="/facebook.png">
-            	</a>
-
-            	<a href="https://plus.google.com/">
-            	   <img src="/g_plus.png">
-            	</a>
-
-              <a href="http://www.skype.com/en/">
-                 <img src="/skype.png">
+  <div class="row">
+    <div class="col s12 m4 l4 summary-area">
+       <img class="coverimages" src="me.jpg">
+       <h6>Software engineer</h6>
+       <h6>MFarm KE</h6>
+       <div class="row">
+         <div class="col m12 s12">
+           <a href="https://www.twitter.com/">
+            <img src="twitter.png">
+           </a>
+           <a href="https://www.facebook.com/?_rdr">
+              <img src="facebook.png">
               </a>
+              <a href="https://plus.google.com/">
+                 <img src="g_plus.png">
+              </a>
+              <a href="http://www.skype.com/en/">
+                 <img src="skype.png">
+              </a>
+       </div>
+      </div>
+    </div>
 
-          
-          	
-          </div>
-         </div>
+      <div class="col s12 m8 l8">
+        <div class="video-container no-controls">
+          <iframe width="853" height="600" frameborder="0" allowfullscreen name="iframe_a"></iframe>
+        </div>
+        <%= yield %>
+    </div>
+  </div>
 
-
-
-        <div class="row">
-            <div class="col-md-12 copyright_part">    
-            	<p> 
-            	   &copy Justus-2015
-            	</p>
-            
-
-            	
-            </div>  
-         </div>
-   </footer>
-  </div> 
-
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize.min.js"></script>
+       <script type="text/javascript" src="justus.js"></script>
+       <script src="typed.js" type="text/javascript"></script>
+    </div>
 </body>
 </html>
